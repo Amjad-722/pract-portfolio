@@ -5,6 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '16rem',
+        xl: '20rem',
+        '2xl': '6rem',
+      },
+    },
   },
   plugins: [],
 }
