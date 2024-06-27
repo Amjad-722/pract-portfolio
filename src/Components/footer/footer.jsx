@@ -9,12 +9,12 @@ function Footer() {
   );
 
   return (
-    <div className="flex flex-col items-center justify-evenly  border px-8 mt-12 mx-60 h-48 rounded-2xl bg-blue-950 border-gray-800 ">
-      <div className="flex flex-row space-x-4 justify-center mt-8 gap-2 items-center">
+    <div className="flex flex-col items-center justify-evenly border px-4 md:px-8 mt-12 mx-4 md:mx-20 lg:mx-60 h-auto md:h-48 rounded-2xl bg-blue-950 border-gray-800">
+      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center mt-8 gap-2 items-center">
         <input
           type="email"
           placeholder={emailPlaceholder}
-          className="px-3 py-2 rounded-xl border border-gray-500 text-sm text-white bg-blue-950 font-medium h-10 w-96"
+          className="px-3 py-2 rounded-xl border border-gray-500 text-sm text-white bg-blue-950 font-medium h-10 w-full md:w-96"
           onFocus={() => setEmailPlaceholder("")}
           onBlur={(e) => {
             if (e.target.value === "") {
@@ -22,14 +22,14 @@ function Footer() {
             }
           }}
         />
-        <button className="text-slate-300 bg-blue-950 px-3 flex justify-between items-center rounded-xl h-10 w-24 border border-gray-500 text-sm font-medium hover:bg-white hover:text-blue-950">
+        <button className="text-slate-300 bg-blue-950 px-3 flex justify-between items-center rounded-xl h-10 w-full md:w-24 border border-gray-500 text-sm font-medium hover:bg-white hover:text-blue-950">
           Sign In
-          <IoIosArrowRoundForward  />
+          <IoIosArrowRoundForward />
         </button>
       </div>
-      <div className="flex justify-between items-center mt-10 pb-2 text-slate-300 pt-8 w-full">
+      <div className="flex flex-col md:flex-row justify-between items-center mt-10 pb-2 text-slate-300 pt-8 w-full">
         <h3 className="mr-4">© 2024 All rights reserved.</h3>
-        <div className="flex ">
+        <div className="flex space-x-2">
           <a
             href="https://twitter.com/"
             target="_blank"
@@ -37,7 +37,7 @@ function Footer() {
           >
             <FaXTwitter
               size={30}
-              className=" text-slate-300 hover:text-slate-100 h-4 w-4 rounded-md"
+              className="text-slate-300 hover:text-slate-100"
             />
           </a>
           <a
@@ -47,7 +47,7 @@ function Footer() {
           >
             <TiSocialPinterestCircular
               size={30}
-              className="text-slate-300 hover:text-slate-100 h-4 w-4 rounded-md"
+              className="text-slate-300 hover:text-slate-100"
             />
           </a>
         </div>
