@@ -25,8 +25,8 @@ function Support() {
       <div className="flex justify-center gap-4 px-10 mt-4  ">
         {images.map((item, index) => (
           <div key={index}>
-            <div className="bg-white p-6 rounded-lg shadow-md w-40 flex justify-center gap items-center">
-              <img src={item.logo} alt="Logo" className="h-20 w-20 mb-4" />
+            <div className="bg-white  rounded-lg shadow-md h-40 w-40 flex justify-center gap items-center">
+              <img src={item.logo} alt="Logo" className="h-40 w-40 " />
             </div>
           </div>
         ))}

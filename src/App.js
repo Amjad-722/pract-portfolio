@@ -6,17 +6,24 @@ import Socials from "./Components/Socials/Socials";
 import Youtube from "./Components/Socials/Youtube";
 import Gallery from "./Components/Socials/Gallery";
 import Support from "./Components/s/Support";
+import Footer from "./Components/footer/footer";
+import AddCommentButton from "./Components/AddCommentButton/AddCommentButton";
 
 function App() {
   return (
     <main className="   bg-[#f5f3ff]">
-
-      
       <section className="py -8 container mx-auto">
         <div className="">
           <Profile />
         </div>
       </section>
+      <div>
+      <div className=" ">
+     
+     
+      <AddCommentButton />
+    </div>
+      </div>
 
       <section className=" flex flex-col items-center w-full container mx-auto">
         <div className="grid grid-cols-1 gap-4 p-5 w-[600px]">
@@ -70,13 +77,19 @@ function App() {
       <section className="mt-10 container mx-auto">
         <Gallery />
       </section>
-      <section className="container mx-auto">
+      <section className="container mt-4 mx-auto">
         <div className="mt-3">
           <Support />
         </div>
       </section>
 
+      
 
+      <section  className=" h-screen">
+        
+      <Footer/>
+
+      </section>
     </main>
   );
 }
