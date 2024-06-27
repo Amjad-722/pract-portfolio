@@ -2,8 +2,8 @@ import React from "react";
 
 function Socials() {
   return (
-    <section className="flex flex-col mt-3 items-center">
-      <div className="font-normal w-full ">
+    <section className="flex flex-col mt-3 ml-4 items-center">
+      <div className="font-normal ml-6 w-full ">
         <h1 className="text-[18px]  text-purple-950 font-semibold">
           New Podcast Episode
         </h1>

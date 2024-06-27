@@ -28,6 +28,26 @@
   color: #61dafb;
 }
 
+@keyframes blink {
+  0% {
+    border-color: #FF0000;
+  } /* Red */
+  20% {
+    border-color: #00FF00;
+  } /* Green */
+  40% {
+    border-color: #0000FF;
+  } /* Blue */
+  60% {
+    border-color: #FFFF00;
+  } /* Yellow */
+  80% {
+    border-color: #FF00FF;
+  } /* Magenta */
+  100% {
+    border-color: #FF0000;
+  } /* Red again to loop */
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

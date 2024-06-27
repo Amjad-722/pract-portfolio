@@ -11,9 +11,9 @@ function Youtube() {
         <hr className="border-gray-600 border-[0.6px] mt-2"/> 
       </div>
 
-      <div className="mt-3 ml-2 rounded-2xl w-full mx-auto h-auto">
+      <div className="mt-3 ml-4 rounded-2xl w-full mx-auto h-auto">
         <iframe
-        width={500}
+        width={570}
         height={300}
           className="rounded-2xl"
           src="https://www.youtube.com/embed/52FkiPbDBi4"

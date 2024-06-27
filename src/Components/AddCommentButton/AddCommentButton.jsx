@@ -1,42 +1,29 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
-const AddCommentButton = () => {
-  const [showInput, setShowInput] = useState(false);
-  const [comment, setComment] = useState('');
+function AddCommentButton() {
+  const [count, setCount] = useState(0);
 
-  const handleInputChange = (e) => {
-    setComment(e.target.value);
-  };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCount((c) => c + 1); // Update the count every second
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
 
-  const handleButtonClick = () => {
-    if (showInput && comment) {
-      alert(`Comment submitted: ${comment}`);
-      setComment('');
-    } else {
-      setShowInput(!showInput);
-    }
+  const getBorderColor = () => {
+    const colors = ["red", "green", "blue", "yellow", "purple"];
+    return colors[count % colors.length]; // Cycle through colors
   };
 
   return (
-    <div className="fixed bottom-5 right-5 flex items-center justify-center space-x-2 z-50">
-      {showInput && (
-        <input
-          type="text"
-          value={comment}
-          onChange={handleInputChange}
-          placeholder="Enter your comment"
-          className="px-4 py-2 border border-gray-300 rounded-md"
-        />
-      )}
-      <button
-        onClick={handleButtonClick}
-        className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700"
-        style={{ minWidth: '100px' }} // Adjust width as needed
-      >
-        {showInput ? 'Submit' : 'Add Comment'}
-      </button>
+    <div className="fixed flex justify-center items-center mx-auto w-full h-10 z-50 ">
+      <div  style={{
+          border: `4px solid ${getBorderColor()}`,
+        }} className="border bg-blue-400 text-white p-1  transition-all duration-300 ease-in-out">
+        <button>+ Create Website From This Template</button>
+      </div>
     </div>
   );
-};
+}
 
 export default AddCommentButton;
