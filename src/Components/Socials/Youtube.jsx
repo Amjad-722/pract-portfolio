@@ -13,7 +13,7 @@ function Youtube() {
 
       <div className="mt-3 ml-4 rounded-2xl w-full mx-auto h-auto">
         <iframe
-        width={510}
+        width={500}
         height={300}
           className="rounded-2xl"
           src="https://www.youtube.com/embed/52FkiPbDBi4"

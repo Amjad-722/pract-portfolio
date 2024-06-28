@@ -24,17 +24,17 @@ function Profile() {
         <button className=" text-blue-900 bg-gray-300 px-3 flex gap-2 justify-between items-center rounded-xl h-10 w-35 border border-gray-500 text-sm  font-medium hover:bg-blue-950 hover:text-white"><TfiWorld />Website</button>
         <button className=" text-blue-900  px-3 flex gap-2 justify-between items-center rounded-xl h-10 w-30 border  border-gray-500  text-sm  font-medium hover:bg-blue-950 hover:text-white "><GiNewspaper />Newsletter</button>
       </div>
-      <div className="flex flex-row space-x-6 p-6 rounded-md ">
+      <div className="flex flex-row space-x-6 mt-6 rounded-md ">
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram size={30} className="text-blue-950  hover:bg-slate-200 h-4 w-4 rounded-md" />
+          <FaInstagram size={30} className="text-blue-950   h-4 w-4 rounded-md" />
         </a>
         <a
           href="https://www.linkedin.com/"
-          target="_blank"
+          target="_blank" 
           rel="noopener noreferrer"
         >
           <FaLinkedinIn size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-md" />
@@ -66,6 +66,13 @@ function Profile() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
           <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
         </a>
       </div>
