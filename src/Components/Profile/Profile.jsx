@@ -66,13 +66,7 @@ function Profile() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
-          <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
+          
           <FaYoutube size={30} className="text-blue-950  hover:bg-slate-200  h-4 w-4 rounded-mdd" />
         </a>
       </div>
