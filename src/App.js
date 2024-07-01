@@ -13,6 +13,8 @@ function App() {
   return (
     <main className="   bg-[#f5f3ff]">
       <section className="py -8 container mx-auto">
+        <div
+      ></div>
         <div className="">
           <Profile />
         </div>
