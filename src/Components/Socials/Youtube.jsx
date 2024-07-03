@@ -2,20 +2,18 @@ import React from "react";
 
 function Youtube() {
   return (
-    <section className=" flex flex-col items-center">
-      <div className=" w-full max-w-xl font-normal">
-        <h1 className="text-start text-[18px]  text-purple-950 font-semibold">
+    <section className="flex flex-col items-center px-4 sm:px-8">
+      <div className="w-full max-w-xl font-normal">
+        <h1 className="text-start text-[18px] text-purple-950 font-semibold">
           LATEST VIDEO
         </h1>
         <p className="text-gray-500">Check out more on my channel</p>
-        <hr className="border-gray-600 border-[0.6px] mt-2"/> 
+        <hr className="border-gray-600 border-[0.6px] mt-2" />
       </div>
 
-      <div className="mt-3 ml-4 rounded-2xl w-full mx-auto h-auto">
+      <div className="mt-3 rounded-2xl w-full h-auto aspect-w-16 aspect-h-16">
         <iframe
-        width={570}
-        height={300}
-          className="rounded-2xl"
+          className="rounded-2xl w-full h-full"
           src="https://www.youtube.com/embed/52FkiPbDBi4"
           title="YouTube video player"
           frameBorder="0"

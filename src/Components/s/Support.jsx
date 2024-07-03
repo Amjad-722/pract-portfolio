@@ -14,19 +14,19 @@ const images = [
 
 function Support() {
   return (
-    <div>
-      <div className="w-full max-w-xl  font-normal">
-        <h1 className=" text-start text-[18px]  text-purple-950 font-semibold">
+    <div className="w-full flex flex-col items-center">
+      <div className="w-full max-w-xl font-normal px-4">
+        <h1 className="text-start text-[18px] text-purple-950 font-semibold">
           Support Me
         </h1>
         <hr className="border-gray-600 border-[0.6px] mt-2" />
       </div>
 
-      <div className="flex justify-center gap-4 px-10 mt-4  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4 mt-4 w-full max-w-4xl">
         {images.map((item, index) => (
-          <div key={index}>
-            <div className="bg-white  rounded-lg shadow-md h-40 w-40 flex justify-center gap items-center">
-              <img src={item.logo} alt="Logo" className="h-40 w-40 " />
+          <div key={index} className="flex justify-center">
+            <div className="bg-white rounded-lg shadow-md h-40 w-40 flex justify-center items-center">
+              <img src={item.logo} alt="Logo" className="h-32 w-32 object-contain" />
             </div>
           </div>
         ))}
